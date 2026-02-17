@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>«NestHostel» — бронирование номеров</title>
+    <meta name="description" content="Сайт-визитка хостела «NestHostel» с возможностью бронирования номеров.">
+    <meta name="keywords" content="хостел, бронирование, номера, цены, контакты">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <a href="#" class="header__logo">
+                <img src="img/Лого 2 (белый).svg" alt="NestHostel" class="header__logo-image">
+            </a>
+            <input type="checkbox" id="menuToggle" class="header__toggle">
+            <label for="menuToggle" class="header__toggle-label" aria-label="Открыть меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#about" class="nav__link">О нас</a></li>
+                    <li class="nav__item"><a href="#rooms" class="nav__link">Номера и услуги</a></li>
+                    <li class="nav__item"><a href="#booking" class="nav__link">Бронирование</a></li>
+                    <li class="nav__item"><a href="#reviews" class="nav__link">Отзывы</a></li>
+                    <li class="nav__item"><a href="#contacts" class="nav__link">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1 class="hero__title">Добро пожаловать в хостел «NestHostel»</h1>
+                <p class="hero__subtitle">Комфортное проживание в центре города</p>
+                <a href="#booking" class="btn">Забронировать сейчас</a>
+            </div>
+        </section>
+
+        <section id="about" class="section about">
+            <div class="container">
+                <h2 class="section__title">О нас</h2>
+                <div class="about__grid">
+                    <div class="about__card">
+                        <h3>История хостела</h3>
+                        <p>Наш хостел открылся в 2010 году и с тех пор радует гостей уютом и домашней атмосферой. Мы
+                            находимся в историческом здании, которое бережно отреставрировали.</p>
+                    </div>
+                    <div class="about__card">
+                        <h3>Сотрудники</h3>
+                        <p>Дружная команда профессионалов всегда готова помочь и подсказать лучшие места в городе.</p>
+                        <ul>
+                            <li>Анна — администратор</li>
+                            <li>Михаил — экскурсовод</li>
+                            <li>Зариф — хозяин</li>
+                        </ul>
+                    </div>
+                    <div class="about__card">
+                        <h3>Галерея</h3>
+                        <div class="gallery">
+                            <div class="gallery__item" aria-label="Фото интерьера 1"></div>
+                            <div class="gallery__item" aria-label="Фото интерьера 2"></div>
+                            <div class="gallery__item" aria-label="Фото интерьера 3"></div>
+                            <div class="gallery__item" aria-label="Фото интерьера 4"></div>
+                            <div class="gallery__item" aria-label="Фото интерьера 5"></div>
+                            <div class="gallery__item" aria-label="Фото интерьера 6"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="rooms" class="section rooms">
+            <div class="container">
+                <h2 class="section__title">Номера и услуги</h2>
+
+                <h3 class="section__subtitle">Типы номеров</h3>
+                <div class="rooms__types">
+                    <div class="room-card">
+                        <div class="room-card__icon"><i class="fas fa-bed"></i></div>
+                        <div class="room-card__title">Одноместный</div>
+                        <div class="room-card__price">1500 ₽/ночь</div>
+                        <p>Уютная комната с одной кроватью, столом и шкафом.</p>
+                    </div>
+                    <div class="room-card">
+                        <div class="room-card__icon"><i class="fas fa-bed"></i><i class="fas fa-bed"></i></div>
+                        <div class="room-card__title">Двухместный</div>
+                        <div class="room-card__price">2200 ₽/ночь</div>
+                        <p>Две раздельные кровати или одна двуспальная по запросу.</p>
+                    </div>
+                    <div class="room-card">
+                        <div class="room-card__icon"><i class="fas fa-people-arrows"></i></div>
+                        <div class="room-card__title">Семейный</div>
+                        <div class="room-card__price">3000 ₽/ночь</div>
+                        <p>Просторный номер с двуспальной кроватью и диваном.</p>
+                    </div>
+                </div>
+
+                <h3 class="section__subtitle">Удобства и услуги</h3>
+                <ul class="amenities__list">
+                    <li class="amenities__item"><i class="fas fa-wifi"></i> Wi-Fi</li>
+                    <li class="amenities__item"><i class="fas fa-utensils"></i> Общая кухня</li>
+                    <li class="amenities__item"><i class="fas fa-soap"></i> Прачечная</li>
+                    <li class="amenities__item"><i class="fas fa-locker"></i> Камера хранения</li>
+                    <li class="amenities__item"><i class="fas fa-ticket-alt"></i> Продажа билетов</li>
+                    <li class="amenities__item"><i class="fas fa-hiking"></i> Экскурсии</li>
+                </ul>
+
+                <h3 class="section__subtitle">Условия проживания и правила</h3>
+                <ul class="rules__list">
+                    <li class="rules__item"><i class="fas fa-clock"></i> Заезд с 14:00</li>
+                    <li class="rules__item"><i class="fas fa-clock"></i> Выезд до 12:00</li>
+                    <li class="rules__item"><i class="fas fa-smoking-ban"></i> Курение запрещено</li>
+                    <li class="rules__item"><i class="fas fa-paw"></i> Животные по запросу</li>
+                    <li class="rules__item"><i class="fas fa-moon"></i> Тихий час с 23:00</li>
+                </ul>
+
+                <h3 class="section__subtitle">Цены</h3>
+                <div class="prices">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Тип номера</th>
+                                <th>Будни</th>
+                                <th>Выходные</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Одноместный</td>
+                                <td>1500 ₽</td>
+                                <td>1700 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>Двухместный</td>
+                                <td>2200 ₽</td>
+                                <td>2500 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>Семейный</td>
+                                <td>3000 ₽</td>
+                                <td>3500 ₽</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section id="booking" class="section booking">
+            <div class="container">
+                <h2 class="section__title">Бронирование</h2>
+
+                <form class="booking__form" action="#" method="post">
+                    <div class="form-group">
+                        <label for="checkin">Дата заезда</label>
+                        <input type="date" id="checkin" name="checkin" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="checkout">Дата выезда</label>
+                        <input type="date" id="checkout" name="checkout" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="room-type">Тип номера</label>
+                        <select id="room-type" name="room-type" required>
+                            <option value="">Выберите...</option>
+                            <option value="single">Одноместный</option>
+                            <option value="double">Двухместный</option>
+                            <option value="family">Семейный</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="guests">Количество человек</label>
+                        <input type="number" id="guests" name="guests" min="1" max="6" required>
+                    </div>
+                    <button type="submit" class="btn">Забронировать</button>
+                </form>
+
+                <div class="booking__info">
+                    <h3>Политика отмены</h3>
+                    <p>Бесплатная отмена бронирования за 48 часов до заезда. При поздней отмене или не заезде взимается
+                        плата за первые сутки.</p>
+                    <h3>Подтверждение и оплата</h3>
+                    <p>После отправки формы вы получите письмо с подтверждением. Оплата производится на месте наличными
+                        или картой.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="reviews" class="section reviews">
+            <div class="container">
+                <h2 class="section__title">Отзывы</h2>
+
+                <div class="reviews__grid">
+                    <div class="review-card">
+                        <div class="review-card__header">
+                            <div class="review-card__avatar">А</div>
+                            <div>
+                                <div class="review-card__name">Алексей</div>
+                                <div class="review-card__date">12.05.2024</div>
+                            </div>
+                        </div>
+                        <p>Отличный хостел! Чисто, уютно, персонал приветливый. Рядом метро и магазины. Обязательно
+                            вернусь!</p>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-card__header">
+                            <div class="review-card__avatar">М</div>
+                            <div>
+                                <div class="review-card__name">Мария</div>
+                                <div class="review-card__date">03.05.2024</div>
+                            </div>
+                        </div>
+                        <p>Останавливалась с подругой в двухместном номере. В номере чисто, хороший ремонт. Есть общая
+                            кухня со всем необходимым.</p>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-card__header">
+                            <div class="review-card__avatar">Д</div>
+                            <div>
+                                <div class="review-card__name">Дмитрий</div>
+                                <div class="review-card__date">21.04.2024</div>
+                            </div>
+                        </div>
+                        <p>Отличное соотношение цены и качества. Вежливый персонал, всегда готовы помочь. WI-FI летает.
+                        </p>
+                    </div>
+                </div>
+
+                <h3 style="text-align: center; margin: 2rem 0;">Оставьте свой отзыв</h3>
+                <form class="review-form" action="#" method="post">
+                    <div class="form-group">
+                        <label for="review-name">Ваше имя</label>
+                        <input type="text" id="review-name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="review-email">Email (необязательно)</label>
+                        <input type="email" id="review-email" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="review-text">Отзыв</label>
+                        <textarea id="review-text" name="text" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Отправить отзыв</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="contacts" class="section contacts">
+            <div class="container">
+                <h2 class="section__title">Контакты</h2>
+
+                <div class="contacts__grid">
+                    <div class="contacts__info">
+                        <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> ул. Центральная, 15, Астрахань</p>
+                        <p><i class="fas fa-phone" aria-hidden="true"></i> +7 (495) 123-45-67</p>
+                        <p><i class="fas fa-envelope" aria-hidden="true"></i> info@nesthostel.ru</p>
+                        <div class="contacts__map">
+                            [интерактивная карта]
+                        </div>
+                    </div>
+                    <div>
+                        <form class="feedback-form" action="#" method="post">
+                            <h3>Обратная связь</h3>
+                            <div class="form-group">
+                                <label for="contact-name">Имя</label>
+                                <input type="text" id="contact-name" name="name">
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-email">Email</label>
+                                <input type="email" id="contact-email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-message">Сообщение</label>
+                                <textarea id="contact-message" name="message" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="btn">Отправить</button>
+                        </form>
+
+                        <div class="social-links">
+                            <a href="#" aria-label="ВКонтакте"><i class="fab fa-vk"></i></a>
+                            <a href="#" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Хостел «NestHostel». Все права защищены.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
